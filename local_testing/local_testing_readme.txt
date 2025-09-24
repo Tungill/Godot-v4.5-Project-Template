@@ -7,7 +7,3 @@ Have a “local_testing” where team members can experiment freely without risk
 Once the assets are ready for use, they simply moves the assets to the 
  project-specific folder and fixes the redirectors.
 This is essentially “promoting” the assets from experimental to production.
-
-Once the project is first pushed on git, add "local_testing" to the git ignore:
- "local_testing/" ; so the version control system is not sharing the 
- experimentals assets.
