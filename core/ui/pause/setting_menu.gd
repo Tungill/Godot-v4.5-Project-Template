@@ -1,6 +1,5 @@
-## ATTENTION: This node code is only working "When Paused" c.f. [member process_mode].
 extends Control
-class_name PauseMenu
+class_name SettingMenu
 
 const CONFIG_PATH: StringName = "user://user_settings.cfg"
 const DEFAULT_VOLUME: float = 50.0
@@ -77,4 +76,5 @@ func _on_close_button_pressed() -> void:
 
 func _on_exit() -> void:
 	self.visible = false
-	get_tree().paused = false
+	if get_tree().paused:
+		get_tree().paused = false
