@@ -4,12 +4,14 @@
 ## Inspired by [url=https://youtu.be/yB3Wv-Lr7pg?list=PLeG_dAglpVo5oOrjQqDTMQadVDqe1Zsom]Eric Peterson's talk[/url].[br]
 ## [br]
 ## - Functions, variables and so on, should [b]never[/b] be used in this script. Only signals.[br]
-# [b][/b][br]
 extends Node
 #class_name EventBus
 @warning_ignore_start("unused_signal") # Avoid unecessary warnings in the output.
 
 # Enter your events categories and signals.
+class DebugEvents:
+	pass
+var debug: DebugEvents = DebugEvents.new()
 
 #region INFO EXAMPLE
 # Use local classes to organise signals in categories.
