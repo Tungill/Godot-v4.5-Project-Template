@@ -1,10 +1,10 @@
 # Godot-v4.5-Project-Template
 Template with custom ProjectSettings used for non-pixel art games.
-TODO (order may vary)
-- list of features
-- explain current ProjectSettings (error + window + etc)
-- guide to use template + .gitignore for "local_testing"
-
+## Table of contents
+1. []()
+    - []()
+    - []()
+2. []()
 # Modifications
 ## Project settings
 ### Display/Window
@@ -25,32 +25,50 @@ DISCLAIMER: _I never used this structure on a real project yet. I found this one
     |-- addons
     |   |-- ...
     |-- project_name
-    |   |-- meshes
-    |   |   |-- theme_01
-    |   |   |   |-- props_01
-    |   |   |   |   |-- ...
+    |   |-- meshes?
+    |   |   |-- ...
     |   |-- characters
     |   |   |-- character_name
     |   |   |    |-- ...
     |   |   |-- common
     |   |       |-- animations
     |   |       |-- audio
-    |   |-- effects
-    |   |   |-- theme_01
-    |   |       |-- effect_01
-    |   |           |-- effect_01_halo.png
-    |   |           |-- effect_01.tscn
+    |   |-- effects?
+    |   |   |-- ...
     |   |-- maps
-    |   |   |-- sandbox.tscn
+    |   |   |-- ...
     |   |-- ui
     |       |-- hud
     |-- core
+    |   |-- debug
     |   |-- fonts
     |   |-- images
     |   |-- autoloads
+    |   |   |-- event_bus.gd
     |   |-- ui
-    |       |-- menu
-    |       |-- pause
+    |   |   |-- menu
+    |   |   |-- pause
+    |   |       |-- setting_menu.gd
+    |   |-- audio_bus_layout.tres
     |-- local_testing
 ```
-## 
+## Pre-made scripts & nodes
+### Audio Bus
+Set a default ```audio_bus_layout.tres``` with 3 buses:
+1. Master
+2. Music
+3. SFX
+
+Are modified by the [Setting Menu](#settings) to split AudioStream for Music and SFX.
+### Event Bus
+### Debug
+![]()
+```debug_panel.tscn``` with ```debug.gd``` attached:
+- Can add new properties to display on the ```debug_panel.tscn``` by using the signal in [EventBus](#event-bus).
+- Those properties are auto-organised by sections, in alphabetic order, for better clarity.
+- Those properties are updated if the signal is called again and the property already exists.
+### Settings
+```setting_menu.gd``` script with sounds functionalities:
+- Load/save settings into a ```ConfigFile```.
+- Change music & sfx volume in real time (play a chosen sfx).
+- Doesn't save the new settings if close without saving first.
