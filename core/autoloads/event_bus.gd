@@ -10,13 +10,13 @@ extends Node
 
 # Enter your events categories and signals.
 class DebugEvents:
-	pass
+	signal property_changed(section: StringName, id_name: StringName, data: Variant)
 var debug: DebugEvents = DebugEvents.new()
 
 #region INFO EXAMPLE
 # Use local classes to organise signals in categories.
-class _CategoryEvents: # This is a single category.
-	signal _event_happened(argument: Variant) # Signal use when an event is triggered.
+#class _CategoryEvents: # This is a single category.
+	#signal _event_happened(argument: Variant) # Signal use when an event is triggered.
 	# ... other signals.
-var category :_CategoryEvents = _CategoryEvents.new() # Be able to reference the local class to access its signals. Name the category carefully.
+#var category :_CategoryEvents = _CategoryEvents.new() # Be able to reference the local class to access its signals. Name the category carefully.
 #endregion
