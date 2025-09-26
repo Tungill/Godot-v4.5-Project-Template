@@ -31,3 +31,6 @@ layout_mode = 2
 [node name="PropertiesVContainer" type="VBoxContainer" parent="DebugPanel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="ButtonsVContainer" type="VBoxContainer" parent="DebugPanel/VBoxContainer"]
+layout_mode = 2
