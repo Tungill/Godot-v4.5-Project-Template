@@ -9,6 +9,9 @@ var properties: Array
 
 func _ready() -> void:
 	self.visible = false
+	# Doesn't need to exist inside a release build.
+	if not OS.is_debug_build():
+		self.queue_free()
 	# Connect to signals and trigger custom function.
 	Events.debug.property_changed.connect(_update_or_add_debug_property)
 
