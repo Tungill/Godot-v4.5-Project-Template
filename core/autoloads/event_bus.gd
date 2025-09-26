@@ -5,18 +5,15 @@
 ## [br]
 ## - Functions, variables and so on, should [b]never[/b] be used in this script. Only signals.[br]
 extends Node
-#class_name EventBus
+class_name EventBus
 @warning_ignore_start("unused_signal") # Avoid unecessary warnings in the output.
 
-# Enter your events categories and signals.
-class DebugEvents:
-	signal property_changed(section: StringName, id_name: StringName, data: Variant)
+# Use local classes to organise signals into categories.
+class DebugEvents: # This is a single category.
+	signal property_changed(section: StringName, id_name: StringName, data: Variant) 
+	# ... other signals.
+# Mandatory to reference the local class and access its signals. Name the category carefully.
 var debug: DebugEvents = DebugEvents.new()
 
-#region INFO EXAMPLE
-# Use local classes to organise signals in categories.
-#class _CategoryEvents: # This is a single category.
-	#signal _event_happened(argument: Variant) # Signal use when an event is triggered.
-	# ... other signals.
-#var category :_CategoryEvents = _CategoryEvents.new() # Be able to reference the local class to access its signals. Name the category carefully.
-#endregion
+# Repeat the above structure for every category of events you want to make.
+# Enter your events categories and signals.
