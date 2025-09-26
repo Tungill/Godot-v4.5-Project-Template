@@ -1,10 +1,15 @@
 # Godot-v4.5-Project-Template
 Template with custom ProjectSettings used for non-pixel art games.
 ## Table of contents
-1. []()
-    - []()
-    - []()
-2. []()
+1. [Project settings](#project-settings)
+    - [Display/Window](#displaywindow)
+    - [Debug/GDscript](#debuggdscript)
+2. [Folder structure](#folder-structure)
+3. [Pre-made scripts & nodes](#pre-made-scripts--nodes)
+    - [Audio Bus](#audio-bus)
+    - [Event Bus](#event-bus)
+    - [Debug](#debug)
+    - [Settings](#settings)
 # Modifications
 ## Project settings
 ### Display/Window
