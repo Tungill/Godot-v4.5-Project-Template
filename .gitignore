@@ -18,3 +18,7 @@ mono_crash.*.json
 # Local test folder
 local_testing/
 !local_testing_readme.txt
+
+# Godot specific patterns
+*.import
+*.godot
