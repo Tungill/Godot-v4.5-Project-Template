@@ -9,6 +9,7 @@ Template with custom ProjectSettings used for non-pixel art games.
     - [Audio Bus](#audio-bus)
     - [Event Bus](#event-bus)
     - [Debug](#debug)
+    - [Margin Reference Rect](#margin-reference-rect)
     - [Settings](#settings)
 # Modifications
 ## Project settings
@@ -85,6 +86,11 @@ This event bus includes an example on how to set up signals with ```signal prope
 ![Debug panel](/.github/images/debug_panel_example_02.jpg)
 
 **Tips:** If you want to update the property everytime the variable change, you should add the ```Events.debug.property_changed.emit(...)``` of the signal inside a [setter](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html#properties-setters-and-getters) function for the variable.
+### Margin Reference Rect
+```margin_reference_rect.gd``` custom script. Attached to a ```ReferenceRect``` node, this script allows to display the borders of the ```MarginContainer``` without margins.
+Normal behaviour (without script)    |    Custom behaviour (with script)
+:-------------------------:|:-------------------------:
+![ReferenceRect without script inside a MarginContainer](/.github/images/margin_reference_rect_without_script.jpg) | ![ReferenceRect with script inside a MarginContainer](/.github/images/margin_reference_rect_with_script.jpg)
 ### Settings
 ```setting_menu.gd``` script with sounds functionalities:
 - Load/save settings into a ```ConfigFile```.
