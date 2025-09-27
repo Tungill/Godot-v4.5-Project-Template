@@ -1,10 +1,15 @@
 # Godot-v4.5-Project-Template
 Template with custom ProjectSettings used for non-pixel art games.
 ## Table of contents
-1. []()
-    - []()
-    - []()
-2. []()
+1. [Project settings](#project-settings)
+    - [Display/Window](#displaywindow)
+    - [Debug/GDscript](#debuggdscript)
+2. [Folder structure](#folder-structure)
+3. [Pre-made scripts & nodes](#pre-made-scripts--nodes)
+    - [Audio Bus](#audio-bus)
+    - [Event Bus](#event-bus)
+    - [Debug](#debug)
+    - [Settings](#settings)
 # Modifications
 ## Project settings
 ### Display/Window
@@ -12,7 +17,7 @@ Template with custom ProjectSettings used for non-pixel art games.
 - Stretch Mode changed to ```canvas_items``` as recommended for non-pixel art games.
 - Stretch Aspect changed to ```expand``` as recommended for non-pixel art games. ![Stretch Mode/Aspect settings](/.github/images/display_window_02.jpg)
 ### Debug/GDscript
-- Untyped/Inferred Declaration changed to ```Error``` to **enforce static typing** on variables, parameters and functions return. ![Untyped/Inferred Declaration settings](/.github/images/debug_gdscript_01.jpg) ![Untyped variable](/.github/images/debug_gdscript_example_01.jpg) ![Untyped parameter](/.github/images/debug_gdscript_example_02.jpg) ![All typed](/github/images/debug_gdscript_example_03.jpg)
+- Untyped/Inferred Declaration changed to ```Error``` to **enforce static typing** on variables, parameters and functions return. ![Untyped/Inferred Declaration settings](/.github/images/debug_gdscript_01.jpg) ![Untyped variable](/.github/images/debug_gdscript_example_01.jpg) ![Untyped parameter](/.github/images/debug_gdscript_example_02.jpg) ![All typed](/.github/images/debug_gdscript_example_03.jpg)
 ## Folder structure
 Taking inspiration from the [UE4/5 Style Guide](https://github.com/Allar/ue5-style-guide?tab=readme-ov-file#2-content-directory-structure), partially adpated to Godot on [Godot Style Guide](https://github.com/bakneko/godot-style-guide?tab=readme-ov-file#3-directory).
 
